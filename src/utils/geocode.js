@@ -11,6 +11,7 @@ const geocode = (address,callback) =>{
             callback('unable to find the location. Try a new search',undefined);
         }
         else{
+            console.log(JSON.stringify(body.features[0]));
             const latitude  = body.features[0].center[1];
             const longitude = body.features[0].center[0];
             const placeName = body.features[0].place_name;

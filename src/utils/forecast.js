@@ -13,8 +13,8 @@ const forecast = (latitude,longitude,callback) =>{
             callback('unable to find the location. Try a new search',undefined);
         }
         else{
-            
-            callback(undefined,body.daily.data[0].summary+' it is currently '+body.currently.temperature+' degrees out .There is a ' +body.currently.precipProbability+'% chances of rain');
+            console.log('///',JSON.stringify(body.daily.data))
+            callback(undefined,body.daily.data[0].summary+'The highest temperature is '+body.daily.data[0].temperatureMax+'The minimum temperature is '+body.daily.data[0].temperatureMin+' it is currently '+body.currently.temperature+' degrees out .There is a ' +body.currently.precipProbability+'% chances of rain');
                 
         
     }
