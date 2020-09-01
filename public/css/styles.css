@@ -1,0 +1,61 @@
+body {
+    color : #333333;
+    font-family : Arial, Helvetica, sans-serif;
+    max-width: 500px;
+    margin : 0 auto;
+    padding : 10px; 
+    
+
+    display : flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content { 
+ flex-grow: 1;
+}
+footer{
+    color : #212425aa;
+    background: rgb(241, 252, 255);
+    margin-top: 0;
+    border-top: 1px dotted #333333 ;    
+}
+
+header {
+    color : #350303;
+    font-size: 60px;
+    margin-bottom: 1px;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+header a {
+    color: darkblue;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+h1 {
+    color : red;
+    font-size : 42px;
+    max-width: 150 px;
+}
+
+.landscape {
+    background: lightseagreen;
+    width: 300px;
+    height: 200px;
+}
+
+input {
+    border: 1px solid whitesmoke;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 2px solid black;
+    background : lightgray;
+    color: #333333;
+    padding: 8px;
+}
